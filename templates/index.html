@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UPI PDF to CSV</title>
+</head>
+<body>
+  <h2>Upload UPI PDF Statement</h2>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".pdf" required>
+    <input type="submit" value="Upload and Process">
+  </form>
+
+  {% if csv_path %}
+    <h3>✅ Output Files:</h3>
+    <ul>
+      <li><a href="/download/{{ csv_path }}">Download Parsed CSV</a></li>
+      <li><a href="/download/{{ summary_path }}">Download Summary PDF</a></li>
+      <li><a href="/download/{{ locations_path }}">Download Location URLs PDF</a></li>
+    </ul>
+  {% endif %}
+</body>
+</html>
