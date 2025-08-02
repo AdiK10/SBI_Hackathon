@@ -19,6 +19,9 @@ This project allows users to upload their PhonePe/UPI transaction statement in P
    - Parsed CSV
    - Transaction summary PDF
    - Location URLs PDF
+     
+<img width="308" height="175" alt="image" src="https://github.com/user-attachments/assets/84607998-e01a-4078-8ee3-8d4473fd61bd" />
+
 
 ---
 
